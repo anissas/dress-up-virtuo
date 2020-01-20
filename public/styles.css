@@ -1,0 +1,99 @@
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+padding: 10px;  
+width:50%; height:auto;
+margin-left:auto; margin-right:auto;
+border: 2px solid grey;
+border-radius: 10px;
+background-color: black; 
+opacity:1;
+overflow:hidden;
+}
+
+.icon-container {
+margin-bottom: 20px;
+padding: 7px 0;
+font-size: 24px;
+}
+
+/* Full-width input fields */
+input[type=text] {
+width: 100%;
+padding: 10px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background-color: #696969;
+border-radius: 5px;
+}
+
+/* Full-width input fields */
+input[type=number], input[type = date]{
+width: 100%;
+padding: 10px;
+margin: 5px 0 22px 0;
+border: none;
+background-color: #696969;
+border-radius: 5px;   
+}
+
+input[type=text]:focus, input[type=number]:focus, input[type=date]:focus {
+background-color: #ddd;
+outline: none;
+border-radius: 5px;
+}
+
+/* Overwrite default styles of hr */
+hr {
+border: 1px solid #696969;
+margin-bottom: 5px;
+}
+
+.btn {
+background-color: grey;
+color: white;
+padding: 10px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+border-radius: 5px;  
+}
+
+.btn:hover {
+opacity:1;
+}
+
+span{
+color: white;
+}
+
+label{
+color: white;
+}
+
+h1{
+color: white;
+text-align: center;
+font-family : sans-serif, times, serif
+}
+
+body{
+background-image:url(https://www.frenchweb.fr/wp-content/uploads/2017/09/virtuo-balderton-xavier-niel-780x405.jpg);
+background-repeat: repeat;
+background-image-width: 100%;
+background-image-height: 100%;
+overflow:hidden;
+font-family:sans-serif;
+}
+
+label{
+display:block;
+}
+
+
+
+

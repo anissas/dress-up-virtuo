@@ -1,24 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CSS/HTML Workshop with govirtuo.com</title>
-  </head>
-  <body>
-    <div id="car">
-      <input class="js-name" type="text" placeholder="Car name"/>
-      <input class="js-price-by-day" type="number" placeholder="Price by day"/>
-      <input class="js-price-by-km" type="number" placeholder="Price by km"/>
-    </div>
-    <div id="rental">
-      <input class="js-name" type="text" placeholder="Driver name"/>
-      <input class="js-begin" type="date" placeholder="Rental begin date"/>
-      <input class="js-end" type="date" placeholder="Rental end date"/>
-      <input class="js-distance" type="number" placeholder="Distance in km"/>
-      <input class="js-option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
-    <script src="virtuo.js"></script>
-    <script src="index.js"></script>
-  </body>
+<head>   
+<meta charset="UTF-8">
+<title>CSS/HTML Workshop with govirtuo.com</title>
+<link rel='stylesheet' href='styles.css'/>
+</head>
+<body>
+<div class="w3-panel w3-border">
+<div class="container">
+<h1>Dress-up virtuo</h1>
+<hr>
+<div id="car">
+<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+  <span class="label-input100">Car name</span>
+  <input class="input100" type="text" name="name" placeholder="Enter your name">
+  <span class="focus-input100"></span>
+</div>
+<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Price is required">
+ <div style="display: inline-block;">
+  <label for="priceByDay">Price by day</label>
+  <input class="js-price-by-day" type="number"  name="priceByDay" id="priceByDay" placeholder="Price by day"/>
+</div>
+<span class="focus-input100"></span>
+<div style="display: inline-block;">
+  <label for="priceBykm">Price by km</label>
+  <input class="js-price-by-km" type="number"  name="priceBykm" id="priceBykm" placeholder="Price by km"/>
+</div>
+<span class="focus-input100"></span>
+</div>
+</div>
+
+<div id="rental">    	
+<span class="label-input100">Driver name</span>
+<input class="js-name" type="text" placeholder="Driver name"/>
+<div style="display: inline-block;">
+<label for="date">Rental begin date</label>          
+<input class="js-begin" type="date" name="date" id="date" placeholder="Rental begin date"/>
+</div> 
+<div style="display: inline-block;">
+<label for="dateEnd">Rental end date</label>
+<input class="js-end" type="date"  name="dateEnd" id="dateEnd" placeholder="Rental end date"/>
+</div> 
+
+<div>
+<span class="label-input100">Distance in km</span>
+</div>
+<input class="js-distance" type="number" placeholder="Distance in km"/>
+<div>
+<span class="label-input100">Deductible option</span>
+<input class="js-option" type="checkbox" placeholder="Deductible option"/>
+</div>
+</div>
+<button type="submit" class="btn" id="compute"><b>Compute</b></button>
+</div>
+<div id="actors"></div>
+<script src="virtuo.js"></script>
+<script src="index.js"></script>
+
+</body>
 </html>
