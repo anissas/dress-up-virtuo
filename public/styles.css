@@ -4,10 +4,9 @@
 .container {
 padding: 10px;  
 width:50%; height:auto;
-margin-left:auto; margin-right:auto;
-border: 2px solid grey;
+border: 1px solid grey;
 border-radius: 10px;
-background-color: black; 
+
 opacity:1;
 overflow:hidden;
 }
@@ -82,10 +81,9 @@ font-family : sans-serif, times, serif
 }
 
 body{
-background-image:url(https://www.frenchweb.fr/wp-content/uploads/2017/09/virtuo-balderton-xavier-niel-780x405.jpg);
-background-repeat: repeat;
-background-image-width: 100%;
-background-image-height: 100%;
+background-image:url(image.jpg);
+background-repeat: no-repeat;
+background-size: cover;
 overflow:hidden;
 font-family:sans-serif;
 }
